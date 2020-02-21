@@ -51,6 +51,20 @@ functionality. [Attackers can trick logged-in Facebook users to
 arbitrarily like fan pages, links, groups,
 etc](http://threatpost.com/en_us/blogs/facebook-jacking-scams-expand-060310)
 
+#### Clickjacking testing code/script:
+
+```html
+<html>
+<head>
+<title>Clickjack test page</title>
+</head>
+<body>
+<p>Website is vulnerable to clickjacking!</p>
+<iframe src="http://www.owasp.org/sensitive-page" width="500" height="500"></iframe>
+</body>
+</html>
+```
+
 # Defending against Clickjacking
 
 There are two main ways to prevent clickjacking:
